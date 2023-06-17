@@ -18,6 +18,7 @@ O publicador é o componente que envia mensagens. Ele cria mensagens sobre um t�
 
 Algumas aplicações também utilizam broker: um módulo de programa de computador que permite validação, comunicação e roteamento de mensagens entre aplicativos, sistemas e serviços. Os corretores de mensagens servem como intermediários entre os nós, facilitando assim a troca de mensagens entre publicadores e assinantes. O objetivo principal de um broker é receber mensagens recebidas de aplicativos e executar alguma ação nelas. Os intermediários de mensagens implementam efetivamente o desacoplamento, minimizando a consciência mútua entre os nós.
 
+## Sistema construído
 Nesta aplicação as mensagens pub/sub enviam instantaneamente notificações assíncronas de eventos quando as mensagens são publicadas no tópico da mensagem. Os assinantes são notificados quando uma mensagem está disponível.
 Não é utilizado broker. Aqui é utilizado o padrão pub/sub que utiliza uma rede P2P, ou seja, todo nó da rede se inscreve no canal de publicação de todos os outros n-1 nós, permitindo receber notificações de toda a rede. 
 
