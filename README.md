@@ -3,16 +3,16 @@ Uma aplicação distribuída para gerenciamento de comunicação por vídeo, áu
 
 Nesta plicação foi utilizado o padrão de mensagens publisher/subscribe: um serviço de mensagens assíncrono e escalonável que separa os serviços que produzem mensagens dos serviços que processam essas mensagens. Esse sistema pub/sub tem quatro componentes principais.
 
-##Mensagens
+## Mensagens
 Mensagens são dados de comunicação enviados do remetente ao destinatário. Os tipos de dados de mensagens podem ser qualquer coisa, desde strings de caracteres a objetos complexos representando texto, vídeo, dados de sensores, áudio ou outro conteúdo digital.
 
-##Tópicos
+## Tópicos
 Cada mensagem tem um tópico associado. Esse tópico funciona como um canal intermediário entre emissores e receptores. Ele mantém uma lista de destinatários interessados em mensagens sobre esse tópico.
 
-##Assinantes
+## Assinantes
 Um assinante é o destinatário da mensagem. Os assinantes precisam se registrar (ou assinar) em tópicos de interesse. Eles podem executar funções diferentes ou fazer algo diferente com a mensagem em paralelo.
 
-##Publicador
+## Publicador
 O publicador é o componente que envia mensagens. Ele cria mensagens sobre um tópico e as envia apenas uma vez a todos os assinantes desse tópico. Essa interação entre o editor e os assinantes é uma relação de um para muitos. O editor não precisa saber quem está usando as informações que está transmitindo, e os assinantes não precisam saber de onde vem a mensagem
 
 
