@@ -23,7 +23,5 @@ Não é utilizado broker. Aqui é utilizado o padrão pub/sub que utiliza uma re
 
 A imagem abaixo fornece essa ideia, onde um arco saindo de um nó com sentido a outro indica que este nó de origem é inscrito no canal do nó B. por simplificação, os arcos possuem os dois sentidos indicando que A se inscreve nas publicações de B, e B se inscreve nas publicações de A.
 
-![rede p2p](p2p-network.png)
-
-
+<img src="p2p-network.png" alt="rede p2p" style="width:400px; height:400px;">
 
